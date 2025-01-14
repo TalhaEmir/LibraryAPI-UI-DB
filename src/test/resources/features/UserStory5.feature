@@ -3,7 +3,7 @@ Feature: As a user, I want to view my own user information using decode endpoint
 
 
 
-@regression @ui @wip @test1
+@wip @ui @smoke
 Scenario Outline: View my own user information
 Given I logged Library api with credentials "<email>" and "<password>"
 And Accept header is "application/json"
@@ -22,6 +22,8 @@ And "id" field should not be null
     | librarian10@library | libraryUser | 2             |
     | student10@library   | libraryUser | 3             |
     | librarian13@library | libraryUser | 2             |
+
+
 
 
 
